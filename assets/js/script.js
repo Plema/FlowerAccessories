@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $('body').css('opacity','1')
+
   $('.open').on('click', function() {
     $('nav').addClass('open-nav');
   });

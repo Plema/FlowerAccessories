@@ -1,6 +1,5 @@
 .one-product{
   max-width: 280px;
-  min-width: 280px;
   margin: 0 auto;
   width: 100%;
   .photo{
@@ -15,6 +14,7 @@
     margin-bottom: 10px;
     padding: 25px;
     transition: 0.5s;
+    position: relative;
     &:hover{
       background: #acbda4;
     }
@@ -98,6 +98,102 @@
         font-weight: 400;
         border: none;
         background: transparent;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 375px){
+  .one-product{
+    .photo{
+      width: 220px;
+      height: 220px;
+    }
+  }
+}
+
+@media (min-width: 425px){
+  .one-product{
+    .buy{
+      width: 245px;
+      min-width: 240px;
+      justify-content: space-around;
+      margin-left: 0;
+      margin: 0 auto;
+      .quantity-block{
+        width: 110px;
+      }
+      .go-to-basket{
+        width: 110px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .one-product{
+    max-width: 295px;
+    width: 100%;
+    .photo{
+      width: 254px;
+      height: 254px;
+      margin-bottom: 14px;
+    }
+    .link-product{
+      font-size: 16px;
+      margin-bottom: 1px;
+    }
+    p{
+      font-size: 20px;
+    }
+    .price{
+      font-size: 20px;
+    }
+    .buy{
+      width: 275px;
+      min-width: 275px;
+      justify-content: space-around;
+      .quantity-block{
+        width: 124px;
+      }
+      .go-to-basket{
+        width: 124px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .one-product{
+    .buy{
+      opacity: 0;
+      transition: 0.5s;
+      z-index: -1;
+    }
+    &:hover{
+      .photo{
+        background: #acbda4;
+      }
+      .buy{
+        z-index: 2;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px){
+  .one-product{
+    .buy{
+      width: 295px;
+      min-width: 295px;
+      justify-content: space-around;
+      .quantity-block{
+        width: 134px;
+      }
+      .go-to-basket{
+        width: 134px;
       }
     }
   }
