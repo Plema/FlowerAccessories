@@ -13,10 +13,17 @@ main{
     margin: auto;
   }
   .slider-delivery{
-    margin-bottom: 50px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     z-index: 2;
-    .one-del{
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    div{
       max-width: 190px;
       width: 100%;
       height: 158px;
@@ -26,6 +33,16 @@ main{
       margin: 0 auto;
       background: #FFFFFF;
       border-radius: 15px;
+      margin-bottom: 20px;
+      border: 2px solid transparent;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover{
+        border-color: #799370;
+      }
+    }
+    .active{
+      border-color: #799370;
     }
   }
   .text{
@@ -40,6 +57,34 @@ main{
       line-height: 24px;  
       color: #454E5C;
       margin-bottom: 30px;
+    }
+  }
+  .block {
+    display: none;
+  }
+  .first-show {
+    .first {
+      display: block;
+    }
+  }
+  .second-show {
+    .second {
+      display: block;
+    }
+  }
+  .third-show {
+    .third {
+      display: block;
+    }
+  }
+  .four-show {
+    .four {
+      display: block;
+    }
+  }
+  .fifth-show {
+    .fifth {
+      display: block;
     }
   }
 }
@@ -78,6 +123,7 @@ main{
 
 @media (min-width: 1024px) {
   main{
+    padding-bottom: 200px;
     &:before{
       right: -40%;
     }
@@ -85,6 +131,46 @@ main{
       font-size: 44px;
       text-align: center;
       margin-bottom: 80px;
+    }
+    .text{
+      max-width: 610px;
+      width: 100%;
+      padding-right: 5px;
+    }
+    .first-show {
+      .first {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+    .second-show {
+      .second {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;      
+      }
+    }
+    .third-show {
+      .third {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+    .four-show {
+      .four {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+    .fifth-show {
+      .fifth {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
     }
   }
 }
@@ -117,7 +203,7 @@ main{
     margin-bottom: 37px;
   }
   main{
-    padding-bottom: 140px;
+    padding-bottom: 240px;
     &:before{
       right: -35%;
     }

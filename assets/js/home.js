@@ -25,11 +25,15 @@ $(document).ready(function(){
     touchThreshold: 100,
     autoplay: true,
     autoplaySpeed: 5000,
+    variableWidth: false,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
           slidesToShow: 3,
+          centerMode: false,
+          arrows: true,
+          variableWidth: false,
         }
       },
       {
@@ -38,15 +42,17 @@ $(document).ready(function(){
           slidesToShow: 2,
           centerMode: false,
           arrows: true,
+          variableWidth: false,
         }
       },
       {
-        breakpoint: 500,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           centerPadding: 0,
           centerMode: true,
           arrows: false,
+          variableWidth: true,
         }
       }
 
@@ -55,7 +61,7 @@ $(document).ready(function(){
 
   $('.act-pr1').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: 'linear',
     speed: 500,
@@ -64,33 +70,32 @@ $(document).ready(function(){
     touchThreshold: 100,
     autoplay: true,
     autoplaySpeed: 5000,
+    variableWidth: false,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
           slidesToShow: 2,
           centerMode: false,
           arrows: true,
+          variableWidth: false,
         }
       },
       {
-        breakpoint: 500,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           centerPadding: 0,
           centerMode: true,
-          arrows:false,
+          arrows: false,
+          variableWidth: true,
         }
       }
 
     ]
   });
+
+
 
   
     function windowSize(){
