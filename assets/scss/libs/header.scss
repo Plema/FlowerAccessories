@@ -15,6 +15,43 @@ header{
       color: #364862;
     }
   }
+  ol{
+    display: none;
+    background: #ffffff;
+    padding-top: 15px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    width: 110px;
+    li{
+      margin-bottom: 10px;
+      padding-left: 10px;
+      a{
+        font-size: 14px;
+        color: #364862;
+      }
+    }
+  }
+  .catalog-mob{
+    img{
+      transform: rotate(180deg);
+      display: inline;
+      max-width: 5px;
+      margin-left: 2px;
+      transition: 0.5s;
+    }
+  }
+  .info-mob{
+    img{
+      transform: rotate(180deg);
+      display: inline;
+      max-width: 5px;
+      margin-left: 2px;
+      transition: 0.5s;
+    }
+  }
   .top-header{
     background: #F5ECE5;
     padding: 15px 0;
@@ -254,6 +291,13 @@ header{
           .basket-info{
             display: none;
           }
+          .hover-bask{
+            opacity: 0;
+            z-index: -5;
+            transition: 0.5s;
+            height: 0 !important;
+            display: none;
+          }
         }
       }
     }
@@ -340,6 +384,7 @@ header{
     }
     .bot-header{
       padding: 19px 0 11px 0;
+      z-index: auto;
       .all-bot{
         .search-basket{
           .search{
@@ -357,6 +402,97 @@ header{
               width: 30px;
             }
           }
+          .all-basket{
+            cursor: pointer;
+            .hover-bask{
+              background: #F8F5ED;
+              border: 1px solid #DDDAD3;
+              box-sizing: border-box;
+              padding: 0 10px 30px 10px;
+              border-radius: 0px 0px 10px 10px;
+              height: 0;
+              height: 0 !important;
+              position: absolute;
+              right: 0;
+              top: 56px;
+              width: 330px;
+              z-index: -1;
+              display: block;
+              .one-prod{
+                padding-bottom: 20px;
+                padding-top: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                z-index: -1;
+                border-bottom: 1px solid #DDDAD3;
+                &:last-of-type{
+                  margin-bottom: 20px;
+                }
+                .delete-product-head{
+                  max-width: 12px;
+                  img{
+                    max-width: 12px;
+                  }
+                }
+                .img{
+                  width: 38px;
+                  height: 38px;
+                  background: #E2E1DD;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  img{
+                    max-width: 25px;
+                  }
+                }
+                .links-pr{
+                  width: 150px;
+                  padding-left: 10px;
+                  h5{
+                    color: #ADA49D;
+                    font-size: 14px;
+                  }
+                  h6{
+                    color: #454E5C;
+                    font-size: 16px;
+                  }
+                }
+                .price-count{
+                  width: 70px;
+                  strong{
+                    display: block;
+                    color: #799370;
+                    font-size: 18px;
+                    font-weight: 700;
+                  }
+                  span{
+                    display: block;
+                    font-size: 16px;
+                    color: #ADA49D;
+                  }
+                }
+              }
+              .button{
+                margin-bottom: 20px;
+              }
+              .go-to-catalog{
+                text-align: center;
+                display: block;
+                text-decoration: underline;
+                color: #454E5C;
+                font-size: 16px;
+              }
+            }
+            &:hover{
+              .hover-bask{
+                opacity: 1;
+                z-index: 10;
+                height: auto !important;
+              }
+            }
+          }
         }
       }
     }
@@ -365,6 +501,56 @@ header{
 
 @media (min-width: 1280px) {
   header{
+    ol{
+      background: #F8F5ED;
+      border-radius: 0px 0px 20px 20px;
+      top: 48px;
+      display: block;
+      opacity: 0;
+      z-index: -1;
+      transition: 0.5s;
+      display: none;
+      height: 0;
+      li{
+        opacity: 0;
+        z-index: -1;
+        transition: 0.5s;
+        &:before{
+          display: none;
+          width: 0;
+          height: 0;
+        }
+        a{          
+          &:hover{
+            color: #364862;
+          }
+        }
+      }
+    }
+    .act-mob{
+      img{
+        transform: rotate(270deg);
+      }
+      ol{
+        opacity: 1;
+        z-index: 5;
+        height: auto;
+        display: block;
+        li{
+          opacity: 1;
+          z-index: 5;
+          height: auto;
+        }
+      }
+    }
+    .info-mob{
+      ol{
+        width: 212px;
+        li{
+          width: 100%;
+        }
+      }
+    }
     .top-header{
       .all-top{
         .burger{
@@ -414,7 +600,7 @@ header{
                 position: absolute;
                 right: 0;
                 width: 0;
-                bottom: 0;
+                bottom: -24px;
                 transition: 0.5s;
               }
               a{
@@ -448,6 +634,12 @@ header{
   header{
     .top-header{
       .all-top{
+        margin-left: 12px;
+        .info-block{
+          &:first-of-type{
+            margin-left: 20px;
+          }
+        }
         .long-info-block{
           .on-hover{
             p{
@@ -457,12 +649,16 @@ header{
             }
           }
         }
+        .social-desk{
+          margin-left: -25px;
+        }
         .last-info-block{
-          margin-right: 40px;
+          margin-right: 20px;
         }
       }
     }
     .bot-header{
+      padding: 21px 0 14px;
       .all-bot{
         nav{
           ul{
@@ -472,8 +668,28 @@ header{
           }
         }
         .search-basket{
+          max-width: 38%;
           .search{
-            margin-right: 30px;
+            margin-right: 41px;
+            .button-circle{
+              img{
+                max-width: 20px;
+              }
+            }
+          }
+          .all-basket{
+            .basket-info{
+              h6{
+                font-size: 16px;
+                line-height: 21px;
+              }
+              .count-price{
+                min-width: 117px;
+                h6{
+                  font-size: 14px;
+                }
+              }
+            }
           }
         }
       }

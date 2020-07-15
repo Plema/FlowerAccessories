@@ -12,4 +12,18 @@
     $(this).addClass('active');
   });
   
+  $('.mob').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: 'linear',
+    speed: 500,
+    infinite: true,
+    centerPadding: 0,
+    touchThreshold: 100,
+    // variableWidth: true,
+    arrows: false,
+  });
+
+
 });

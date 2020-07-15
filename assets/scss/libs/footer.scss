@@ -1,8 +1,61 @@
 footer{
+  .catalog-mob1{
+    img{
+      transform: rotate(180deg);
+      display: inline;
+      max-width: 5px;
+      margin-left: 2px;
+      transition: 0.5s;
+    }
+  }
+  .info-mob1{
+    img{
+      transform: rotate(180deg);
+      display: inline;
+      max-width: 5px;
+      margin-left: 2px;
+      transition: 0.5s;
+    }
+  }
+  ol{
+    display: none;
+    background: #ffffff;
+    padding-top: 15px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    width: 110px;
+    li{
+      margin-bottom: 10px;
+      padding-left: 10px;
+      a{
+        font-size: 14px;
+        color: #364862;
+      }
+    }
+  }
+  .act-mob{
+    img{
+      transform: rotate(270deg);
+    }
+    ol{
+      opacity: 1;
+      z-index: 5;
+      height: auto;
+      display: block;
+      li{
+        opacity: 1;
+        z-index: 5;
+        height: auto;
+      }
+    }
+  }
   .top-footer{
     background-color: #f5ece5;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     border-bottom: 1px solid #748C6C;
     .all-top-foot{
       .logo{
@@ -56,7 +109,7 @@ footer{
       justify-content: space-around;
       flex-wrap: wrap;
       flex-direction: column;
-      .politic{
+      .polit{
         font-size: 14px;
         text-decoration-line: underline;
         color: #2A384D;
@@ -178,13 +231,18 @@ footer{
             display: flex;
             align-items: center;
             justify-content: center;
+            .info-mob1{
+              ol{
+                width: 250px;
+              }
+            }
           }
         }
       }
     }
     .bottom-footer{
       .all-bot-foot{
-        .politic{
+        .polit{
           font-size: 15px;
           margin-bottom: 0;
         }
@@ -206,7 +264,7 @@ footer{
       padding-top: 34px;
       .all-bot-foot{
         justify-content: space-between;
-        .politic{
+        .polit{
           margin-right: 156px;
         }
         .long-info-block{

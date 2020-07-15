@@ -227,11 +227,36 @@ main{
 }
 
 @media (min-width: 1024px) {
+  main{
+    position: relative;
+    overflow: hidden;
+    &:before, &:after{
+      content: '';
+      width: 680px;
+      height: 750px;
+      background: url('../img/adv-left.png') no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: 0;
+    }
+    &:before{
+      bottom: 5%;
+      left: -20%;
+    }
+    &:after{
+      right: -50%;
+      top: 5%;
+    }
+  }
   .discount{
+    position: relative;
+    z-index: 2;
     width: 864px;
   }
   .interesting{
     border: none;
+    position: relative;
+    z-index: 2;
     h3{
       margin-bottom: 0;
     }
@@ -275,6 +300,15 @@ main{
 }
 
 @media (min-width: 1280px) {
+  main{
+    &:before{
+      bottom: 30%;
+    }
+    &:after{
+      right: -30%;
+      transform: rotate(5deg);
+    }
+  }
   .discount{
     width: 1030px;
   }
@@ -337,6 +371,33 @@ main{
           }
         }
       }
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  main{
+    &:before{
+      transform: rotate(10deg);
+      left: -15%;
+    }
+    &:after{
+      right: -27%;
+    }
+  }
+}
+
+
+@media (min-width: 1750px) {
+  main{
+    &:before{
+      transform: rotate(10deg);
+      left: -10%;
+      bottom: 27%;
+    }
+    &:after{
+      right: -22%;
     }
   }
 }

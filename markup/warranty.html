@@ -72,14 +72,34 @@
             <img src="img/+.png" alt="" class="close-nav">
             <ul>
               <li><a href="index.html">Главная</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li class="catalog-mob">
+                <a href="javasctipt:void(0).html">
+                  Каталог
+                  <img src="img/gr-arrow.png" alt="" class="arr">
+                </a>
+                <ol>
+                  <li><a href="catalog.html">Игрушки</a></li>
+                  <li><a href="catalog.html">Фурнитура</a></li>
+                  <li><a href="catalog.html">Букеты</a></li>
+                </ol>
+              </li>
               <li><a href="pay.html">Оплата</a></li>
               <li><a href="delivery.html">Доставка</a></li>
             </ul>
             <ul>
-              <li><a href="info.html">Информация</a></li>
+              <li class="info-mob">
+                <a href="javasctipt:void(0).html">
+                  Информация
+                  <img src="img/gr-arrow.png" alt="" class="arr">
+                </a>
+                <ol>
+                  <li><a href="warranty.html">Гарантийные обязательства</a></li>
+                  <li><a href="warranty.html">Гарантийные обязательства</a></li>
+                  <li><a href="map-of-site.html">Карта сайта</a></li>
+                </ol>
+              </li>
               <li><a href="about-company.html">О Компании</a></li>
-              <li><a href="discount.html">Акции</a></li>
+              <li><a href="sale.html">Акции</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
           </nav>
@@ -95,12 +115,32 @@
         <nav>
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li class="catalog-mob">
+              <a href="javasctipt:void(0).html">
+                Каталог
+                <img src="img/gr-arrow.png" alt="" class="arr">
+              </a>
+              <ol>
+                <li><a href="catalog.html">Игрушки</a></li>
+                <li><a href="catalog.html">Фурнитура</a></li>
+                <li><a href="catalog.html">Букеты</a></li>
+              </ol>
+            </li>
             <li><a href="pay.html">Оплата</a></li>
             <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="info.html">Информация</a></li>
+            <li class="info-mob">
+              <a href="javasctipt:void(0).html">
+                Информация
+                <img src="img/gr-arrow.png" alt="" class="arr">
+              </a>
+              <ol>
+                <li><a href="warranty.html">Гарантийные обязательства</a></li>
+                <li><a href="#">Условия возврата/обмена</a></li>
+                <li><a href="map-of-site.html">Карта сайта</a></li>
+              </ol>
+            </li>
             <li><a href="about-company.html">О компании</a></li>
-            <li><a href="discount.html">Акции</a></li>
+            <li><a href="sale.html">Акции</a></li>
             <li><a href="contact.html">Контакты</a></li>
           </ul>
         </nav>
@@ -128,7 +168,7 @@
             </div>
           </div>
 
-          <div class="all-basket">
+          <div class="all-basket" onclick="document.location.href='basket.html'">
             <div class="basket">
               <img src="img/basket.png" alt="">
               <div class="num">
@@ -140,6 +180,58 @@
               <div class="count-price">
                 <h6>4 товара, <span>1 500 руб</span> </h6>
               </div>
+            </div>
+            <div class="hover-bask">
+              <div class="one-prod">
+                <div class="delete-product-head">
+                  <img src="img/+1.png" alt="">
+                </div>
+                <a href="one-product.html" class="img">
+                  <img src="img/flower4.png" alt="">
+                </a>
+                <a href="one-product.html" class="links-pr">
+                  <h5>Лента атласная</h5>
+                  <h6>Голубая</h6>
+                </a>
+                <div class="price-count">
+                  <strong>2 490 р.</strong>
+                  <span>3 шт.</span>
+                </div>
+              </div>
+              <div class="one-prod">
+                <div class="delete-product-head">
+                  <img src="img/+1.png" alt="">
+                </div>
+                <a href="one-product.html" class="img">
+                  <img src="img/flower4.png" alt="">
+                </a>
+                <a href="one-product.html" class="links-pr">
+                  <h5>Лента атласная</h5>
+                  <h6>Голубая</h6>
+                </a>
+                <div class="price-count">
+                  <strong>2 490 р.</strong>
+                  <span>3 шт.</span>
+                </div>
+              </div>
+              <div class="one-prod">
+                <div class="delete-product-head">
+                  <img src="img/+1.png" alt="">
+                </div>
+                <a href="one-product.html" class="img">
+                  <img src="img/flower4.png" alt="">
+                </a>
+                <a href="one-product.html" class="links-pr">
+                  <h5>Лента атласная</h5>
+                  <h6>Голубая</h6>
+                </a>
+                <div class="price-count">
+                  <strong>2 490 р.</strong>
+                  <span>3 шт.</span>
+                </div>
+              </div>
+              <a href="basket.html" class="button">Оформить заказ</a>
+              <a href="catalog.html" class="go-to-catalog">Продолжить покупки</a>
             </div>
           </div>
         </div>
@@ -184,12 +276,31 @@
       <nav>
         <ul>
           <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li class="catalog-mob1">
+            <a href="javasctipt:void(0).html">
+            Каталог
+            <img src="img/gr-arrow.png" alt="" class="arr">
+          </a>
+          <ol>
+            <li><a href="catalog.html">Игрушки</a></li>
+            <li><a href="catalog.html">Фурнитура</a></li>
+            <li><a href="catalog.html">Букеты</a></li>
+          </ol></li>
           <li><a href="pay.html">Оплата</a></li>
           <li><a href="delivery.html">Доставка</a></li>
         </ul>
         <ul>
-          <li><a href="info.html">Информация</a></li>
+          <li class="info-mob1">
+            <a href="javasctipt:void(0).html">
+              Информация
+              <img src="img/gr-arrow.png" alt="" class="arr">
+            </a>
+            <ol>
+              <li><a href="warranty.html">Гарантийные обязательства</a></li>
+              <li><a href="#">Условия возврата/обмена</a></li>
+              <li><a href="map-of-site.html">Карта сайта</a></li>
+            </ol>
+          </li>
           <li><a href="about-company.html">О компании</a></li>
           <li><a href="discount.html">Акции</a></li>
           <li><a href="contact.html">Контакты</a></li>
@@ -201,7 +312,7 @@
   <div class="bottom-footer">
     <div class="container">
       <div class="all-bot-foot">
-        <a href="javascript:void(0)" class="politic">Политика конфиденциальности</a>
+        <a href="javascript:void(0)" class="polit">Политика конфиденциальности</a>
 
         <div class="info-block long-info-block">
           <span class="circle">
@@ -240,6 +351,121 @@
     </div>
   </div>
 </footer>
+  <div class="back-dark-pop "></div>
+
+<div class="pop-up entrance">
+  <div class="close-pop">
+    <img src="img/+1.png" alt="">
+  </div>
+  <div class="text-pop">
+    <h3>Вход</h3>
+    <form action="">
+      <div class="inp">
+        <input type="email" placeholder="Ваша почта">
+      </div>
+      <div class="inp">
+        <input type="password" placeholder="Введите пароль">
+        <img src="img/eye.png" alt="">
+      </div>
+      <a href="javascript:voi(0)" class="miss-pass pop-link">
+        <span>Забыли пароль?</span> 
+        <strong>Восстановить</strong>
+      </a>
+      <a href="personal-area.html" class="button">Войти</a>
+    </form>
+      <a href="javascript:void(0)" class="go-to-registr pop-link">
+        <span>Нет учетной записи? </span>
+        <strong>Зарегистрироваться</strong>
+      </a>
+  </div>
+</div>
+
+<div class="pop-up registration-pop ">
+  <div class="close-pop">
+    <img src="img/+1.png" alt="">
+  </div>
+  <div class="text-pop">
+    <h3>Регистрация</h3>
+    <form action="">
+      <div class="inp">
+        <input type="text" placeholder="Ваше имя">
+      </div>
+      <div class="inp">
+        <input type="email" placeholder="Ваша почта">
+      </div>
+      <div class="inp">
+        <input type="password" placeholder="Введите пароль">
+        <img src="img/eye.png" alt="">
+      </div>
+      <a href="javascript:void(0)" class="button">Зарегистрироваться</a>
+    </form>
+    <a href="javascript:voi(0)" class="pop-link polit">
+      <span>Регистрируясь, вы соглашаетесь с</span>
+      <strong>пользовательским соглашением</strong>
+    </a>
+    <a href="javascript:voi(0)" class="pop-link go-to-entry">
+      <span>У вас уже есть аккаунт?</span>
+      <strong>Войти</strong>
+    </a>
+  </div>
+</div>
+
+<div class="pop-up write-review-pop">
+  <div class="close-pop">
+    <img src="img/+1.png" alt="">
+  </div>
+  <div class="text-pop">
+    <h3>Вы можете оставить отзыв</h3>
+    <form action="">
+      <div class="inp">
+        <input type="text" placeholder="Ваше имя">
+      </div>
+      <div class="inp">
+        <input type="email" placeholder="Ваша почта">
+      </div>
+      <textarea placeholder="Текст сообщения"></textarea>
+      <a href="javascript:void(0)" class="button">Оставить отзыв</a>
+    </form>
+  </div>
+</div>
+
+<div class="pop-up politic-pop">
+  <div class="close-pop">
+    <img src="img/+1.png" alt="">
+  </div>
+  <div class="text-pop">
+    <h3>Политика конфиденциальности</h3>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<div class="basket-pop pop-save-order">
+  <div class="close-pop">
+    <img src="img/+1.png" alt="">
+  </div>
+  <div class="text-pop">
+    <h3>Ваш заказ сохранен</h3>
+  </div>
+</div>
+
+<div class="basket-pop pop-order-fine">
+  <div class="close-pop">
+    <img src="img/+1.png" alt="">
+  </div>
+  <div class="text-pop">
+    <h3>Спасибо</h3>
+    <h3>Ваш заказ оформлен</h3>
+  </div>
+</div>
+
+
+
 
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>

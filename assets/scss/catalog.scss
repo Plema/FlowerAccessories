@@ -234,6 +234,39 @@ main{
       }
     }
   }
+  .all-main{
+    position: relative;
+    overflow: hidden;
+    &:before, &:after{
+      position: absolute;
+      height: 750px;
+      width: 680px;
+      content: '';
+      z-index: 0;
+      background: url('../img/adv-left.png') no-repeat;
+    }
+    &:before{
+      left: -12%;
+      top: 18%;
+      background-size: contain;
+    }
+    &:after{
+      right: -45%;
+      bottom: 10%;
+      background-size: contain;
+      transform: rotate(15deg);
+    }
+    .main-content{
+      .filter{
+        position: relative;
+        z-index: 2;
+      }
+      .catalog-sort{
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
 }
 
 @media (min-width: 1280px) {
@@ -242,6 +275,16 @@ main{
   }
   .recently-looked{
     width: 1080px;
+  }
+  .all-main{
+    &:before{
+      left: -17%;
+      top: 20%;
+    }
+    &:after{
+      right: -35%;
+      bottom: 15%;
+    }
   }
 }
 
@@ -269,6 +312,30 @@ main{
       max-width: 940px;
       width: 100%;
       margin-left: auto;
+    }
+  }
+  .all-main{
+    &:after{
+      right: -30%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .all-main{
+    &:before{
+      left: -10%;
+    }
+    &:after{
+      right: -25%;
+    }
+  }
+}
+
+@media (min-width: 1750px) {
+  .all-main{
+    &:after{
+      right: -20%;
     }
   }
 }

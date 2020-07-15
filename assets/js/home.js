@@ -55,13 +55,12 @@ $(document).ready(function(){
           variableWidth: true,
         }
       }
-
     ]
   });
 
   $('.act-pr1').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     cssEase: 'linear',
     speed: 500,
@@ -74,6 +73,15 @@ $(document).ready(function(){
     responsive: [
       {
         breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+          arrows: true,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           centerMode: false,
@@ -91,7 +99,6 @@ $(document).ready(function(){
           variableWidth: true,
         }
       }
-
     ]
   });
 
@@ -133,6 +140,85 @@ $(document).ready(function(){
   }
     $(window).on('load resize',windowSize);
   
-$(".slick-arrow").empty()
+        
+    $('.main-slider-review').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      cssEase: 'linear',
+      speed: 500,
+      infinite: true,
+      cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+      touchThreshold: 100,
+      // autoplay: true,
+      autoplaySpeed: 5000,
+      variableWidth: false,
+      arrows: false,
+      asNavFor: '.slider-nav-review',
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
+            arrows: false,
+            variableWidth: false,
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: 0,
+            centerMode: true,
+            arrows: false,
+            variableWidth: true,
+          }
+        }
+      ]
+    });
+
+    $('.slider-nav-review').slick({
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      cssEase: 'linear',
+      speed: 500,
+      infinite: true,
+      // cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+      touchThreshold: 100,
+      // autoplay: true,
+      autoplaySpeed: 5000,
+      variableWidth: true,
+      asNavFor: '.main-slider-review',
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            centerMode: false,
+            slidesToShow: 4,
+            arrows: false,
+          }
+        },
+      ]
+    });
+
+
+    $(".slick-arrow").empty()
+
+
+    $('.write-review').on('click', function() {
+      $('.write-review-pop').addClass('open-pop');
+      $('.back-dark-pop').addClass('open-back-pop');
+      $('body').css('overflow','hidden');
+    });
+
+    // ('.slider-nav-review > .slick-active:nth-child(2)').addClass('marg-slide');
 
 });
