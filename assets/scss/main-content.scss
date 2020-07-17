@@ -20,6 +20,8 @@
         cursor: pointer;
         label{
           cursor: pointer;
+          display: flex;
+          align-items: center;
         }
         input{
           cursor: pointer;
@@ -264,7 +266,7 @@
             margin-bottom: 27px;
           }
           input,label{
-            padding: 5px 50px 15px 23px; 
+            padding: 0px 50px 0px 23px; 
           }
         }
       }
@@ -274,6 +276,7 @@
       margin-bottom: 100px;
       .catalog{
         .one-product{
+          margin: 0;
           max-width: 280px;
           width: 100%;
           margin-bottom: 75px;
