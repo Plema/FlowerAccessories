@@ -1,5 +1,4 @@
 header{
-  // overflow-x: hidden;
   .social {
     display: flex;
     align-items: center;
@@ -93,28 +92,6 @@ header{
           min-width: 170px;
           border: 1px solid #C1BFB9;
           transition: 0.3s;
-          // &:before, &:after{
-          //   bottom: 100%;
-          //   left: 50%;
-          //   border: solid transparent;
-          //   content: " ";
-          //   height: 0;
-          //   width: 0;
-          //   position: absolute;
-          //   pointer-events: none;
-          // }
-          // &:before{
-          //   border-color: rgba(206, 204, 197, 0);
-          //   border-bottom-color: #CECCC5;
-          //   border-width: 10px;
-          //   margin-left: -10px;
-          // }
-          // &:after{
-          //   border-color: rgba(255, 255, 255, 0);
-          //   border-bottom-color: #ffffff;
-          //   border-width: 9px;
-          //   margin-left: -9px
-          // }
           p{
             font-size: 14px;
             line-height: 21px;
@@ -141,6 +118,9 @@ header{
               &:nth-child(2){
                 margin: 0 2px;
               }
+            }
+            strong{
+              display: none;
             }
           }
         }
@@ -199,7 +179,24 @@ header{
       }
     }
   }
-
+  //Зарегестрированный пользователь
+  .log{
+    .all-top{
+      .last-info-block{
+        .on-hover{
+          .fl{
+            span{
+              display: none;
+            }
+            strong{
+              display: inline-block;
+              font-weight: 500;
+            }
+          } 
+        }
+      }
+    }
+  }
   .bot-header{
     background: #F8F5ED;;
     padding: 15px 0;
