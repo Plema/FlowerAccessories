@@ -142,7 +142,7 @@ header{
         nav{
           position: absolute;
           width: 280px;
-          height: 236px;
+          height: auto;
           opacity: 0;
           z-index: -1;
           background: #ffffff;
@@ -152,7 +152,7 @@ header{
           display: flex;
           align-items: flex-start;
           justify-content: space-between;
-          padding: 35px 25px 15px 35px;
+          padding: 35px 15px 15px 20px;
           top: 15px;
           right: 20px;
           ul{
@@ -226,16 +226,16 @@ header{
         .search{
           position: relative;
           input{
-            position: absolute;
-            right: 0;
             width: 0;
-            border-radius: 50px;
-            height: 40px;
-            line-height: 40px;
-            border: none;
+            right: 7px;
             z-index: -1;
-            transition: 0.5s;
+            height: 40px;
+            border: none;
             color: #364862;
+            line-height: 40px;
+            position: absolute;
+            border-radius: 50px;
+            transition: 0.5s;
           }
           .open-input{
             width: 225px;
@@ -252,8 +252,28 @@ header{
             justify-content: center;
             position: relative;
             z-index: 3;
+            &::after{
+              content: '';
+              max-width: 15px;
+              line-height: 40px;
+              position: absolute;
+              z-index: 1;
+              right: 11px;
+              background: url('/bitrix/templates/main/img/search.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 16px;
+              height: 16px;
+              background-size: contain;
+              cursor: pointer;
+            }
             img{
               max-width: 15px;
+            }
+          }
+          .active{
+            &::after{
+              display: none;
             }
           }
         }
@@ -397,6 +417,9 @@ header{
               border-radius: 0;
               background: transparent;
               width: 30px;
+              &::after{
+                display: none;
+              }
             }
           }
           .all-basket{

@@ -11,6 +11,7 @@ $(document).ready(function(){
 
   $('.button-circle').on('click', function() {
     $('.search > input').addClass('open-input');
+    $(this).addClass('active');
   });
 
   $(".quantity-arrow-minus").bind("click", function(){
